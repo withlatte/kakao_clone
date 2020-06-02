@@ -5,14 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="styles.css" rel="stylesheet" />
+    <style>
+      body {
+        height: 100%;
+      }
+      .father {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+      }
+      .child {
+        background-color: yellowgreen;
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        border-color: tomato;
+        border-width: 4px;
+      }
+      .child:last-child {
+        background-color: rebeccapurple;
+      }
+      input[type="submit"] {
+        background-color: turquoise;
+      }
+      input[type="password"] {
+        background-color: rgb(223, 51, 185);
+      }
+      input {
+        border: 2px solid red;
+      }
+    </style>
   </head>
   <body>
     <h1>This is Test!</h1>
-    <div class="box">
-      <p class="inside_box">
-        Firefox Profiler is a powerful web-based performance analysis interface
-        featuring call trees, stack charts, flam
-      </p>
+    <div class="father">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child">
+        <input type="password" />
+        <input type="submit" />
+      </div>
     </div>
     <a href="#">FAKE LINK</a>
   </body>
