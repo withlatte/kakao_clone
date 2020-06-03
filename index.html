@@ -3,51 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet" />
-    <style>
-      body {
-        height: 100%;
-      }
-      .father {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-      }
-      .child {
-        background-color: yellowgreen;
-        width: 200px;
-        height: 200px;
-        border-style: solid;
-        border-color: tomato;
-        border-width: 4px;
-      }
-      .child:last-child {
-        background-color: rebeccapurple;
-      }
-      input[type="submit"] {
-        background-color: turquoise;
-      }
-      input[type="password"] {
-        background-color: rgb(223, 51, 185);
-      }
-      input {
-        border: 2px solid red;
-      }
-    </style>
+    <title>Chats | Kakao Clone</title>
+    <script
+      src="https://kit.fontawesome.com/df97642f52.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>This is Test!</h1>
-    <div class="father">
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child">
-        <input type="password" />
-        <input type="submit" />
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">14:39</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">57%</span>
+        <i class="fas fa-battery-half"></i>
       </div>
     </div>
-    <a href="#">FAKE LINK</a>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Chats</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
   </body>
 </html>
