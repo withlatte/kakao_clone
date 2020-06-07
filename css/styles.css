@@ -10,6 +10,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap");
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: white;
@@ -20,4 +27,5 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
