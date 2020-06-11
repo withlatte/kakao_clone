@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chatting | Kakao Clone</title>
     <script
@@ -41,26 +47,39 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, June 05, 2020</span>
-        <li class="incoming-message message">
-          <img src="img/avatar/kmj.png" class="message-avatar" />
-          <div class="message-content">
-            <span class="message-author">Best Friend</span>
-            <div class="message-bubble">
-              수입화물 컨테이너 육상운송 업체 이원화 진행 보고의 건 (이)가 결재
-              완료되었습니다.
-            </div>
+        <li class="message incoming-message">
+          <img src="img/avatar/kmj.png" class="m-avatar message-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              수입화물 컨테이너 육상운송 업체 완료되었습니다.
+            </span>
+            <span class="message__author">Best Friend</span>
           </div>
-          <span class="message__timestamp">Friday, June 05, 2020</span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">
+              알겠습니다. 감사합니다. 수고하세요~
+            </span>
+          </div>
         </li>
         <li class="incoming-message message">
-          <span class="message__timestamp">Friday, June 05, 2020</span>
-          <div class="message-content">
-            <div class="message-bubble">
-              알겠습니다. 감사합니다. 수고하세요~
-            </div>
+          <img src="img/avatar/kmj.png" class="m-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              Alright! byebye~
+            </span>
+            <span class="message__author">Best Friend</span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">
+              Thank you see you soon!
+            </span>
           </div>
         </li>
       </ul>
